@@ -75,8 +75,7 @@ export default async function Orders() {
                   appearance="secondary"
                   label="View Order"
                   className={classes.button}
-                  el="button"
-                />
+                  el="button" children={''}                />
               </Link>
               {index !== orders.length - 1 && <HR />}
             </li>
@@ -84,7 +83,7 @@ export default async function Orders() {
         </ul>
       )}
       <HR />
-      <Button href="/account" appearance="primary" label="Go to account" />
+      <Button href="/account" appearance="primary" label="Go to account" children={''} />
     </Gutter>
   )
 }

@@ -81,6 +81,7 @@ export const ResetPasswordForm: React.FC = () => {
         appearance="primary"
         label="Reset Password"
         className={classes.submit}
+        children={''}
       />
     </form>
   )
