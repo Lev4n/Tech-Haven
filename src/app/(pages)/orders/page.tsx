@@ -75,7 +75,9 @@ export default async function Orders() {
                   appearance="secondary"
                   label="View Order"
                   className={classes.button}
-                  el="button" children={''}                />
+                  el="button" 
+                  children={''}                
+                />
               </Link>
               {index !== orders.length - 1 && <HR />}
             </li>

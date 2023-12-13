@@ -15,7 +15,7 @@ export type RelatedProductsProps = {
   relationTo: 'products'
 }
 
-export const RelatedrProducts: React.FC<RelatedProductsProps> = props => {
+export const RelatedProducts: React.FC<RelatedProductsProps> = props => {
   const { docs, relationTo } = props
 
   return (

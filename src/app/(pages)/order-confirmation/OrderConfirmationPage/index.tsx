@@ -33,7 +33,7 @@ export const OrderConfirmationPage: React.FC<{}> = () => {
             <Button
               href={`${process.env.NEXT_PUBLIC_SERVER_URL}/orders`}
               label="View all orders"
-              appearance="secondary" children={''} />
+              appearance="secondary" children={''}            />
           </div>
         </Fragment>
       ) : (
@@ -45,9 +45,11 @@ export const OrderConfirmationPage: React.FC<{}> = () => {
           <div className={classes.actions}>
             <Button href={`/account/orders/${orderID}`} label="View order" appearance="primary" children={''} />
             <Button
-              href={`${process.env.NEXT_PUBLIC_SERVER_URL}/account/orders`}
-              label="View all orders"
-              appearance="secondary" children={''} />
+                href={`${process.env.NEXT_PUBLIC_SERVER_URL}/account/orders`}
+                label="View all orders"
+                appearance="secondary" 
+                children={''}            
+            />
           </div>
         </Fragment>
       )}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { Jost } from 'next/font/google'
+
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
 import { Header } from './_components/Header'
@@ -29,7 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
-          <main className='main'>{children}</main>
+          <main className="main">{children}</main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>

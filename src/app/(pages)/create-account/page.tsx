@@ -27,7 +27,7 @@ export default async function CreateAccount() {
             alt="logo"
             width={250}
             height={23}
-            className={classes.logo}  
+            className={classes.logo}
           />
         </Link>
       </div>

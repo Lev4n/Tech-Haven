@@ -144,7 +144,7 @@ export const CheckoutPage: React.FC<{
       {!clientSecret && error && (
         <div className={classes.error}>
           <p>{`Error: ${error}`}</p>
-          <Button label="Back to cart" href="/cart" appearance="secondary" />
+          <Button label="Back to cart" href="/cart" appearance="secondary" children={''} />
         </div>
       )}
       {clientSecret && (

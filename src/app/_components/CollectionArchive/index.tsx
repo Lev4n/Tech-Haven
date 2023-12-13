@@ -68,15 +68,15 @@ export const CollectionArchive: React.FC<Props> = props => {
   const scrollToRef = useCallback(() => {
     const { current } = scrollRef
     if (current) {
-      current.scrollIntoView({
-        behavior: 'smooth',
-      })
+      // current.scrollIntoView({
+      //   behavior: 'smooth',
+      // })
     }
   }, [])
 
   useEffect(() => {
     if (!isLoading && typeof results.page !== 'undefined') {
-      scrollToRef()
+      // scrollToRef()
     }
   }, [isLoading, scrollToRef, results])
 
@@ -96,13 +96,13 @@ export const CollectionArchive: React.FC<Props> = props => {
         where: {
           ...(categoryFilters && categoryFilters?.length > 0
             ? {
-              categories: {
-                in:
-                  typeof categoryFilters === 'string'
-                    ? [categoryFilters]
-                    : categoryFilters.map((cat: string) => cat).join(','),
-              },
-            }
+                categories: {
+                  in:
+                    typeof categoryFilters === 'string'
+                      ? [categoryFilters]
+                      : categoryFilters.map((cat: string) => cat).join(','),
+                },
+              }
             : {}),
         },
         limit,
