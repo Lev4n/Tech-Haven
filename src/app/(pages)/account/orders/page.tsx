@@ -69,12 +69,12 @@ export default async function Orders() {
                   </div>
                 </div>
                 <Button
-                    appearance="default"
-                    label="View Order"
-                    className={classes.button}
-                    el="link"
-                    href={`/account/orders/${order.id}`} 
-                    children={''}                
+                  appearance="default"
+                  label="View Order"
+                  className={classes.button}
+                  el="link"
+                  href={`/account/orders/${order.id}`}
+                  children={''}
                 />
               </Link>
             </li>

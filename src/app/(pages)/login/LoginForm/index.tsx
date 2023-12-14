@@ -69,7 +69,7 @@ const LoginForm: React.FC = () => {
         appearance="primary"
         label={isLoading ? 'Processing' : 'Login'}
         disabled={isLoading}
-        className={classes.submit} 
+        className={classes.submit}
         children={''}
       />
 

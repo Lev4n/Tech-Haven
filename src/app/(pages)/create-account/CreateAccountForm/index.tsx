@@ -119,7 +119,7 @@ const CreateAccountForm: React.FC = () => {
         label={loading ? 'Processing' : 'Sign up'}
         disabled={loading}
         appearance="primary"
-        className={classes.submit} 
+        className={classes.submit}
         children={''}
       />
       <div>

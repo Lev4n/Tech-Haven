@@ -28,8 +28,8 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
           href="/login"
           label="Login"
           appearance="primary"
-          onClick={() => (window.location.href = '/login')} 
-          children={''}        
+          onClick={() => (window.location.href = '/login')}
+          children={''}
         />
       )}
       {user && <CartLink />}
