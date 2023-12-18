@@ -15,7 +15,7 @@ export async function Header() {
   try {
     header = await fetchHeader()
   } catch (error) {
-    console.error('An error occurred:', error);
+    
   }
 
   return (

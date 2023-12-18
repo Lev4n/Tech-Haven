@@ -26,7 +26,7 @@ const Products = async () => {
 
     categories = await fetchDocs<Category>('categories')
   } catch (error) {
-    console.error('An error occurred:', error);
+    
   }
 
   return (
